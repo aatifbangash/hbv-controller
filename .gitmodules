@@ -1,0 +1,3 @@
+[submodule "hbv2-user"]
+	path = hbv2-user
+	url = git@github.com:aatifbangash/hbv2-user.git
