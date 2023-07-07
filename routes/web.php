@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Hbv2Controller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::any('/{any}', [Hbv2Controller::class, 'processRequest'])->where('any', '.*');
 Route::get('/', function () {
     return view('welcome');
 });

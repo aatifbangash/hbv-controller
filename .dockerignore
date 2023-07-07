@@ -1,0 +1,8 @@
+node_modules/
+vendor/
+hbv2-user/
+test/
+.git/
+.idea/
+copilot/
+.env
