@@ -1,0 +1,13 @@
+name: Dispatch Event from Submodule
+
+on:
+  repository_dispatch:
+    types: [hello_world]
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print message
+        run: echo "HELLO WORLD"
